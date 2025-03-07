@@ -2,11 +2,7 @@
 
 echo "Enter a string:"
 read input
-
-# Reverse the string
 reverse=$(echo "$input" | rev)
-
-# Check if the original string and the reversed string are the same
 if [ "$input" == "$reverse" ]; then
     echo "The string '$input' is a palindrome."
 else
