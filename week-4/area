@@ -1,0 +1,8 @@
+#!/bin/bash
+calculate_area() {
+    area=$(echo "3.14 * $1 * $1" | bc)
+    echo "Area: $area"
+}
+echo "Enter radius:"
+read radius
+calculate_area $radius
